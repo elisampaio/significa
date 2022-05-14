@@ -1,0 +1,220 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+html {
+  background: black;
+  font-family: 'Inter', sans-serif;
+}
+
+.shapes {
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 70vh;
+}
+
+.shape1, .shape2, .shape3, .shape4 {
+  position: fixed;
+  /* width: 8vh;
+  height: 8vh; */
+  width: 50px;
+  height: 50px;
+}
+
+.shape1:hover, .shape2:hover, .shape3:hover, .shape4:hover {
+  cursor: pointer;
+}
+
+#ideasBox {
+  z-index: 1;
+}
+
+.ideas {
+  position: relative;
+  left: 5vw;
+  width: 28vw;
+  height: auto;
+  padding: 2vh 1.2vw;
+  border-radius: 20px;
+}
+
+.position-items {
+  position: absolute;
+  bottom: 0;
+  width: 0;
+}
+
+.ideas:hover {
+  cursor: default;
+}
+
+#idea1 {
+  background-color: #EFC676;
+  opacity: .90;
+  display: none;
+}
+
+#idea2 {
+  background-color: #EF7676;
+  opacity: .90;
+  display: none;
+}
+
+#idea3 {
+  background-color: #7691EF;
+  opacity: .90;
+  display: none;
+}
+
+#idea4 {
+  background-color: #76EFA6;
+  opacity: .90;
+  display: none;
+}
+
+.idea-label {
+  color: black;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.idea-text {
+  color: black;
+  font-size: 22px;
+  line-height: 28px;
+  margin-top: 4px;
+  margin-bottom: 6px;
+}
+
+.idea-indicators {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.idea-indicators p {
+  font-size: 14px;
+  line-height: 20px;
+  color: black;
+  margin-right: 0.3vw;
+}
+
+.idea-indicators img:hover {
+  cursor: pointer;
+}
+
+#idea3-05, #idea3-06, #idea3-09, #idea3-011, #idea4-02 {
+  hyphens: auto;
+}
+
+.bottom {
+  box-sizing: border-box;
+  position: relative;
+  background: #0C0C0C;
+  height: auto;
+  margin-top: 3vh;
+  padding: 3vh 5vw 3vh 5vw;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+h2 {
+  font-size: 14px;
+  line-height: 22px;
+  color: #3D3D3D;
+}
+
+p {
+  font-size: 16px;
+  line-height: 22px;
+  color: #858585;
+}
+
+.section-icon {
+  max-width: .8vw;
+  margin-right: .4vw;
+  opacity: 0.2;
+}
+
+.legend-items {
+  display: flex;
+  flex-direction: row;
+  margin-top: 8px;
+}
+
+.legend-icons {
+  width: 2vw;
+  height: 2vw;
+  margin-bottom: 4px;
+}
+
+.legend-divs {
+  margin-right: 10px;
+}
+
+.legend-divs p {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+#about, #legend, #others {
+  width: 32vw;
+}
