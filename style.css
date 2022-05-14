@@ -155,8 +155,13 @@ html {
   margin-right: 0.3vw;
 }
 
-.idea-indicators img:hover {
+/* .idea-indicators img:hover {
   cursor: pointer;
+} */
+
+#shape1-btn-l:hover, #shape1-btn-r:hover, #shape2-btn-l:hover, #shape2-btn-r:hover, #shape3-btn-l:hover, #shape3-btn-r:hover, #shape4-btn-l:hover, #shape4-btn-r:hover {
+opacity: 0.7;
+cursor: pointer;
 }
 
 #idea3-05, #idea3-06, #idea3-09, #idea3-011, #idea4-02 {
